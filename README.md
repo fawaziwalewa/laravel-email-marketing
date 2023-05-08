@@ -73,14 +73,19 @@ To install this project, you need to follow these steps:
     ```
     The password field is always hidden, do not expect it to show up.
 
+### Node Packages Installation
+
+11. Install Node.js package manager by going to https://nodejs.org/en/ and download the suitable package for your operating system
+12. Navigate to the project root directory via command prompt
+13. Run the following command to install Node packages for this project
+    ```
+    npm install
+    ```
+
 ## Usage
 
 Once you have installed the project, you can access the dashboard by navigating to `http://your-domain.com/admin`. From there, you can view the analytics for subscribers, sent emails, failed emails, and open emails.
 
-To import subscribers from a CSV file, navigate to `http://your-domain.com/admin/subscribers` and click the `Import CSV` button. Follow the prompts to upload your CSV file and map the columns to the appropriate fields.
+To import subscribers from a CSV file, navigate to `http://your-domain.com/admin/subscribers` and click the `Import` button. Follow the prompts to upload your CSV file and map the columns to the appropriate fields.
 
-To create a new email campaign, navigate to `http://your-domain.com/admin/templates` and click the `New Template` button. You can create your own template using the template editor. Once you have created your email, you can send it to your subscribers by clicking the `Send` button or you can set the status to scheduled to start sending on save.
-
-## Conclusion
-
-This Laravel Email Marketing Project provides a powerful yet easy-to-use platform for managing your email marketing campaigns. With its dashboard analytics, subscriber import, reusable email templates, and easy installation guide, you can get up and running quickly and easily.
+To create a new email campaign, navigate to `http://your-domain.com/admin/templates` and click the `New Template` button. You can create your own template using the template editor. Once you have created your email, you can send it to your subscribers by clicking the `Send` button or you can set the status to scheduled to
