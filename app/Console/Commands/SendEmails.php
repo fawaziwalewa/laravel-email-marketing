@@ -17,7 +17,7 @@ class SendEmails extends Command
      *
      * @var string
      */
-    protected $signature = 'app:send-emails {subscribersPerRequest} {template_id}';
+    protected $signature = 'app:send-emails {template_id} {subscribersPerRequest?}';
 
     /**
      * The console command description.
@@ -39,7 +39,7 @@ class SendEmails extends Command
         if ($subscribers->isNotEmpty()) {
             $count = 0;
             foreach ($subscribers as $subscriber) {
-                if ($count <= $subscribersPerRequest) {
+                if ($count <= $subscribersPerRequest || empty($subscribersPerRequest)) {
                     $received = Email::where('template_id', $template_id)
                         ->where('subscriber_id', $subscriber->id)
                         ->where('status', 1)
