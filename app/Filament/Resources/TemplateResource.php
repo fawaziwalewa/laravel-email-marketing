@@ -51,7 +51,7 @@ class TemplateResource extends Resource
                 TinyEditor::make('body')
                     ->minHeight(300)
                     ->required()
-                    ->helperText('Shortcodes: [username], [userEmail]')
+                    ->helperText('Shortcodes: [username], [userEmail],  [button color="success" url="https://example.com" text="Some Text"], button supported colors are: success, error, primary.')
                     ->columnSpanFull(),
             ]);
     }
