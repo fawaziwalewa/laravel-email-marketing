@@ -21,7 +21,7 @@ class ManageSubscribers extends ManageRecords
                     ImportField::make('name')
                             ->rules('required|min:5|max:255'),
                     ImportField::make('email')
-                            ->rules('required|email:rfc,dns|unique:subscribers,email')
+                            ->required(),
                 ])->modalWidth('md')
         ];
     }
