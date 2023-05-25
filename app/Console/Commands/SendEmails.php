@@ -17,7 +17,7 @@ class SendEmails extends Command
      *
      * @var string
      */
-    protected $signature = 'app:send-emails {template_id} {subscribersPerRequest?}';
+    protected $signature = 'app:send-emails {subscribersPerRequest?} {template_id}';
 
     /**
      * The console command description.
