@@ -23,8 +23,8 @@ class Kernel extends ConsoleKernel
 
                 $schedule
                     ->command(SendEmails::class, [
-                        $subscribersPerRequest,
                         $template_id,
+                        $subscribersPerRequest,
                     ])
                     ->cron("*/{$requestInterval} * * * *");
             }
