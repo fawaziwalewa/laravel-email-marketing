@@ -23,7 +23,7 @@ class ManageSubscribers extends ManageRecords
                             ->rules('required|min:5|max:255'),
                     ImportField::make('email')
                             ->required(),
-                ])->modalWidth('md')
+                ], columns:2)->modalWidth('md')
         ];
     }
 }
