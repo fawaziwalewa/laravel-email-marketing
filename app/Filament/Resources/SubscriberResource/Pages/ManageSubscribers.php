@@ -17,6 +17,7 @@ class ManageSubscribers extends ManageRecords
         return [
             Actions\CreateAction::make()->modalWidth('md'),
             ImportAction::make()
+                ->uniqueField('email')
                 ->fields([
                     ImportField::make('name')
                             ->rules('required|min:5|max:255'),
